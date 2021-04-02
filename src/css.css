@@ -529,18 +529,19 @@ section#landing p {
 
 #projects ul li a {
   text-decoration: none;
-  color: #fc5185;
+  color: #65d9df;
   letter-spacing: .1em;
   position: relative;
   padding: .3em;
-  font-size: 1em;
+  font-size: 1.1em;
+  font-weight: 800;
 }
 
 #projects ul li a::after {
   content: '';
   position: absolute;
   bottom: 0;
-  background-color: #43dde6;
+  background-color: #fc5185;
   width: 0;
   left: 50%;
   height: 2px;
