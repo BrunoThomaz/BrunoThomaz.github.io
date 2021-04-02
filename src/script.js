@@ -1,5 +1,5 @@
 //Prevent Scrolling before end modal animation
-// window.onscroll = function () { window.scrollTo(0, 0); };
+window.onscroll = function () { window.scrollTo(0, 0); };
 //end Prevent Scrolling
 
 //navbar animation
