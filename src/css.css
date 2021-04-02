@@ -408,7 +408,9 @@ section#landing p {
   color: #0f0f0f;
 }
 
-#technologies {
+#educationalBackgrounds {
+  background-color: #ffffffe8;
+  color: #364f6b;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,42 +418,84 @@ section#landing p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  min-height: 100vh;
-  background-color: #f0f0f0e8;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: .5em;
 }
 
-#technologies .card {
+#educationalBackgrounds .resume {
+  width: 350px;
+  margin-bottom: 50px;
+}
+
+#educationalBackgrounds .gallery {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 450px;
+          flex: 0 0 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  color: #0f0f0f;
-  padding-bottom: 1rem;
-  width: 30vw;
-  height: 80vh;
+  height: 50vh;
 }
 
-#technologies .card img {
-  width: 20vw;
+#educationalBackgrounds .gallery .arrowLeft {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 10%;
+  height: 50vh;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
-#technologies .card h2 {
-  padding: 1em;
+#educationalBackgrounds .gallery .arrowRight {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 10%;
+  height: 50vh;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
-#technologies .card p {
+#educationalBackgrounds .gallery .arrowRight:hover, #educationalBackgrounds .gallery .arrowLeft:hover {
+  background-color: #364f6b4d;
+}
+
+#educationalBackgrounds .gallery .images {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 10px #0000006b;
+          box-shadow: 0px 0px 10px #0000006b;
   width: 80%;
-  font-size: .8em;
+}
+
+#educationalBackgrounds .gallery .images > * {
+  display: none;
+  opacity: 0;
+  width: 90%;
+  -webkit-transition: opacity .4s ease-in-out;
+  transition: opacity .4s ease-in-out;
+}
+
+#educationalBackgrounds .gallery .images > * img, #educationalBackgrounds .gallery .images > * svg {
+  width: 100%;
+}
+
+#educationalBackgrounds .gallery .images > .imageActive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 1;
 }
 
 #projects {
@@ -578,95 +622,5 @@ section#landing p {
 .gldocmanager .container .description p, .ero .container .description p {
   font-size: 16px;
   margin: 16px;
-}
-
-section#educationalBackgrounds {
-  background-color: #ffffffe8;
-  color: #364f6b;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: .5em;
-}
-
-section#educationalBackgrounds .resume {
-  width: 350px;
-  margin-bottom: 50px;
-}
-
-section#educationalBackgrounds .gallery {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 450px;
-          flex: 0 0 450px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 50vh;
-}
-
-section#educationalBackgrounds .gallery .arrowLeft {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  width: 5%;
-  height: 50vh;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-section#educationalBackgrounds .gallery .arrowRight {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  width: 5%;
-  height: 50vh;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-section#educationalBackgrounds .gallery .arrowRight:hover, section#educationalBackgrounds .gallery .arrowLeft:hover {
-  background-color: #364f6b4d;
-}
-
-section#educationalBackgrounds .gallery .images {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-  border-radius: 4px;
-  -webkit-box-shadow: 0px 0px 10px #0000006b;
-          box-shadow: 0px 0px 10px #0000006b;
-  width: 90%;
-}
-
-section#educationalBackgrounds .gallery .images > * {
-  display: none;
-  opacity: 0;
-  width: 90%;
-  -webkit-transition: opacity .4s ease-in-out;
-  transition: opacity .4s ease-in-out;
-}
-
-section#educationalBackgrounds .gallery .images > * img, section#educationalBackgrounds .gallery .images > * svg {
-  width: 100%;
-}
-
-section#educationalBackgrounds .gallery .images > .imageActive {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  opacity: 1;
 }
 /*# sourceMappingURL=css.css.map */
